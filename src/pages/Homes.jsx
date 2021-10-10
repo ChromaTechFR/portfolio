@@ -85,7 +85,7 @@ export default function Homes() {
         amet pariatur labore veniam corrupti tempora dolores at recusandae nemo
         et accusantium placeat totam iste.
       </p>
-      <img src='/img/1.png' alt='' />
+      <img src='./img/Screenshot.png' alt='' />
     </>
   );
 }
