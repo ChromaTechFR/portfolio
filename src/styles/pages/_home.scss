@@ -1,0 +1,26 @@
+.Home {
+  height: 100vh;
+  .name {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-70%, -60%) scale(9);
+    margin: 0;
+  }
+
+  .square {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background: grey;
+    top: 90%;
+    left: 80%;
+    transform: translate(-90%, -80%);
+    margin: 0;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+nav {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-container {
+    background-color: white;
+    .link {
+      margin-right: 50px;
+      display: flex;
+      justify-content: space-between;
+      .link-container {
+        display: flex;
+        justify-content: space-around;
+        a {
+          margin: 10px;
+        }
+      }
+    }
+    .slogan-container {
+      margin-left: 50px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
