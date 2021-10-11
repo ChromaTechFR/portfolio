@@ -8,10 +8,10 @@ export default function NavBar() {
         <div className='nav-container'>
           <div className='link'>
             <div className='slogan-container'>
-              <h3>Developpeur web</h3>
+              <h3>Developpeur</h3>
             </div>
             <div className='link-container'>
-              <NavLink exact to='/about'>
+              <NavLink exact to='/portfolio/contact'>
                 <h3>Contact</h3>
               </NavLink>
 

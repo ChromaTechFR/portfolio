@@ -18,6 +18,38 @@
     transform: translate(-90%, -80%);
     margin: 0;
   }
+
+  @media screen and (max-width: 375px) {
+    .square {
+      width: 5rem;
+      height: 5rem;
+    }
+    .slogan-container {
+      margin-bottom: 2px;
+      align-items: center;
+    }
+    .name {
+      left: 60%;
+      transform: translateX(-60%);
+      transform: scale(2.5);
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .square {
+      width: 5rem;
+      height: 5rem;
+    }
+    .slogan-container {
+      align-items: center;
+      margin-bottom: 1px;
+    }
+    .name {
+      left: 55%;
+      transform: translateX(-55%);
+      transform: scale(2.5);
+    }
+  }
 }
 
 img {

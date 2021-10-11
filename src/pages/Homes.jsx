@@ -6,64 +6,185 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Homes() {
   useEffect(() => {
-    let timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Home",
-        start: "0%",
-        end: "80%",
-        scrub: 1,
-      },
-    });
+    console.log(window.screen.width);
+    if (window.screen.width > 1000) {
+      let slogan = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
 
-    let timeline2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Home",
-        start: "0%",
-        end: "100%",
-        scrub: 1,
-      },
-    });
+      let chroma = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "100%",
+          scrub: 1,
+        },
+      });
 
-    let timeline4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Home",
-        start: "0%",
-        end: "80%",
-        scrub: 1,
-      },
-    });
+      let square = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
 
-    let timeline3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Home",
-        start: "0%",
-        end: "200%",
-        scrub: 1,
-        pin: true,
-        pinSpacing: false,
-      },
-    });
+      let nav = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "200%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
 
-    timeline.fromTo(".slogan-container", { y: 0 }, { y: -400 });
+      slogan.fromTo(".slogan-container", { y: 0 }, { y: -400 });
 
-    timeline2.fromTo(
-      ".name",
-      { scale: 9 },
-      {
-        scale: 1,
-        top: "20px",
-        left: "50px",
-        x: "50%",
-        y: "50%",
-        fontSize: "1.20em",
-      }
-    );
+      chroma.fromTo(
+        ".name",
+        { scale: 9 },
+        {
+          scale: 1,
+          top: "20px",
+          left: "50px",
+          x: "50%",
+          y: "50%",
+          fontSize: "1.20em",
+        }
+      );
 
-    timeline4.fromTo(
-      ".square",
-      { left: "80%" },
-      { left: "100%", opacity: "0", rotation: 90 }
-    );
+      square.fromTo(
+        ".square",
+        { left: "80%" },
+        { left: "100%", opacity: "0", rotation: 90 }
+      );
+    } else if (window.screen.width > 414) {
+      let slogan_mobile2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
+
+      let chroma_mobile2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "100%",
+          scrub: 1,
+        },
+      });
+
+      let square_mobile2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "65%",
+          scrub: 1,
+        },
+      });
+
+      let nav_mobile2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "200%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+
+      slogan_mobile2.fromTo(".slogan-container", { y: 0 }, { y: -400 });
+
+      chroma_mobile2.fromTo(
+        ".name",
+        { scale: 2.5, left: "55%", transform: "translateX(-60%)" },
+        {
+          scale: 1,
+          top: "-50px",
+          left: "-10px",
+          fontSize: "15px",
+          x: "50%",
+          y: "50%",
+        }
+      );
+
+      square_mobile2.fromTo(
+        ".square",
+        { left: "80%", top: "80%" },
+        { left: "100%", opacity: "0", rotation: 90 }
+      );
+    } else {
+      let slogan_mobile = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
+
+      let chroma_mobile = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "100%",
+          scrub: 1,
+        },
+      });
+
+      let square_mobile = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
+
+      let nav_mobile = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".Home",
+          start: "0%",
+          end: "200%",
+          scrub: 1,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
+
+      slogan_mobile.fromTo(".slogan-container", { y: 0 }, { y: -400 });
+
+      chroma_mobile.fromTo(
+        ".name",
+        { scale: 2.5, transform: "translateX(-60%)" },
+        {
+          scale: 1,
+          top: "-50px",
+          left: "-10px",
+          fontSize: "15px",
+          x: "50%",
+          y: "50%",
+        }
+      );
+
+      square_mobile.fromTo(
+        ".square",
+        { left: "80%", top: "80%" },
+        { left: "100%", opacity: "0", rotation: 90 }
+      );
+    }
   }, []);
 
   return (
