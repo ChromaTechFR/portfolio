@@ -17,6 +17,9 @@ export default function NavBar() {
               <a href='#'>
                 <h3>Home</h3>
               </a>
+              <a href='#project'>
+                <h3>Project</h3>
+              </a>
             </div>
           </div>
         </div>

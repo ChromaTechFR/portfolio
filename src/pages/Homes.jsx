@@ -9,6 +9,15 @@ export default function Homes() {
   useEffect(() => {
     console.log(window.screen.width);
     if (window.screen.width > 1000) {
+      let skills = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#creative img",
+          start: "0%",
+          end: "80%",
+          scrub: 1,
+        },
+      });
+
       let slogan = gsap.timeline({
         scrollTrigger: {
           trigger: ".Home",
@@ -67,6 +76,8 @@ export default function Homes() {
         { left: "80%" },
         { left: "100%", opacity: "0", rotation: 90 }
       );
+
+      skills.fromTo("h1#skills", { x: 0 }, { x: 600 });
     } else if (window.screen.width > 414) {
       let slogan_mobile2 = gsap.timeline({
         scrollTrigger: {
@@ -222,7 +233,7 @@ export default function Homes() {
         </div>
       </section>
       <section id='skills'>
-        <p>voila mes compétences</p>
+        <h1 id='skills'>My skills</h1>
         <h1>Language</h1>
         <div className='skills-wrapper'>
           <div className='card'>

@@ -63,10 +63,14 @@ img {
 #presentation {
   div#creative {
     z-index: -2;
+    width: 800px;
+    height: 500px;
     img {
-      width: 45%;
       z-index: -1;
-      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      position: relative;
     }
   }
 
@@ -76,6 +80,7 @@ img {
     top: 135%;
     left: 35%;
     img {
+      object-fit: cover;
       position: relative;
       z-index: -1;
     }
@@ -120,6 +125,14 @@ img {
 }
 
 #skills {
+  h1#skills {
+    font-size: 70px;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    left: 125%;
+    transform: scale(3);
+  }
   z-index: -1;
   position: absolute;
   top: 200%;
@@ -128,9 +141,21 @@ img {
     flex-wrap: wrap;
 
     .card {
-      margin: 10px;
-      padding: 10px;
-      border: 2px solid red;
+      p {
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      margin: 20px;
+      padding: 20px;
+      border-radius: 20px;
+      background: rgb(76, 76, 79);
+      background: radial-gradient(
+        circle,
+        rgba(76, 76, 79, 0.9164040616246498) 0%,
+        rgba(50, 52, 52, 1) 35%,
+        rgba(32, 33, 33, 1) 94%
+      );
       .img-wrapper {
         width: 300px;
         height: 300px;
