@@ -223,10 +223,46 @@ export default function Homes() {
       </section>
       <section id='skills'>
         <p>voila mes compétences</p>
+        <h1>Language</h1>
+        <div className='skills-wrapper'>
+          <div className='card'>
+            <p>TypeScript</p>
+            <div className='img-wrapper'>
+              <img
+                src='https://chromatechfr.github.io/portfolio/img/ts.png'
+                alt=''
+              />
+            </div>
+          </div>
+          <div className='card'>
+            <p>JavaScript</p>
+            <div className='img-wrapper'>
+              <img
+                src='https://chromatechfr.github.io/portfolio/img/js.png'
+                alt=''
+              />
+            </div>
+          </div>
+        </div>
+        <h1>FrameWorks</h1>
         <div className='skills-wrapper'>
           <div className='card'>
             <p>React</p>
-            <img src='' alt='' />
+            <div className='img-wrapper'>
+              <img
+                src='https://chromatechfr.github.io/portfolio/img/react.png'
+                alt=''
+              />
+            </div>
+          </div>
+          <div className='card'>
+            <p>socket.io</p>
+            <div className='img-wrapper'>
+              <img
+                src='https://chromatechfr.github.io/portfolio/img/socket.png'
+                alt=''
+              />
+            </div>
           </div>
         </div>
       </section>
