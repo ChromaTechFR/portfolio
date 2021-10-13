@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .Home {
   height: 100vh;
   .name {
@@ -55,4 +58,71 @@
 img {
   height: 100%;
   width: 100%;
+}
+
+#presentation {
+  div#creative {
+    img {
+      width: 45%;
+    }
+  }
+
+  div#curieux {
+    position: absolute;
+    z-index: 10;
+    width: 500px;
+    top: 135%;
+    left: 35%;
+  }
+
+  h2#creative {
+    color: grey;
+    font-weight: bold;
+    font-size: 80px;
+    position: absolute;
+    top: 120%;
+    left: 40%;
+    z-index: 100;
+  }
+
+  .text-wrapper {
+    z-index: -1;
+    position: absolute;
+    top: 105%;
+    right: 5%;
+    width: 800px;
+    font-size: 50px;
+    height: 490px;
+    #neil {
+      position: relative;
+      color: grey;
+    }
+    #age {
+      position: relative;
+      top: 25%;
+      right: -50%;
+    }
+    #passion {
+      position: relative;
+      display: inline-block;
+      top: 50%;
+      right: -25%;
+      width: 520px;
+      height: 100px;
+    }
+  }
+}
+
+#skills {
+  position: absolute;
+  top: 200%;
+  .skills-wrapper {
+    .card {
+      border: 2px solid red;
+      img {
+        height: 46px;
+        width: 46px;
+      }
+    }
+  }
 }

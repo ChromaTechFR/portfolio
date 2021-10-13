@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import NavBar from "../components/NavBar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Aos from "aos";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Homes() {
@@ -187,6 +188,10 @@ export default function Homes() {
     }
   }, []);
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <div className='Home'>
@@ -195,28 +200,35 @@ export default function Homes() {
         <div className='square'></div>
       </div>
       <section id='presentation'>
-        <img
-          id='creative'
-          src='https://chromatechfr.github.io/portfolio/img/Screenshot.png'
-          alt=''
-        />
-        <p id='creative'>
-          Ce site a pour but de regrouper toute mes compétences j'espères qu'il
-          vou plaira
-        </p>
-        <img
-          src='https://chromatechfr.github.io/portfolio/img/1.png'
-          alt=''
-          id='curieux'
-        />
+        <div className='img-wrapper' id='creative'>
+          <img
+            src='https://chromatechfr.github.io/portfolio/img/2.png'
+            alt=''
+          />
+        </div>
+        <h2 id='creative'>creatif</h2>
+        <div className='img-wrapper' id='curieux'>
+          <img
+            src='https://chromatechfr.github.io/portfolio/img/1.png'
+            alt=''
+          />
+        </div>
+        <div className='text-wrapper'>
+          <div id='neil'>Hey i'm Neil,</div>
+          <div id='age'>18 years old student </div>
+          <div id='passion'>
+            love learning and improving in everything i do.
+          </div>
+        </div>
       </section>
       <section id='skills'>
         <p>voila mes compétences</p>
-        <img
-          id='skills'
-          src='https://chromatechfr.github.io/portfolio/img/Screenshot.png'
-          alt=''
-        />
+        <div className='skills-wrapper'>
+          <div className='card'>
+            <p>React</p>
+            <img src='' alt='' />
+          </div>
+        </div>
       </section>
     </>
   );
