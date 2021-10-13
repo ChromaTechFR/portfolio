@@ -11,13 +11,12 @@ export default function NavBar() {
               <h3>Developpeur</h3>
             </div>
             <div className='link-container'>
-              <NavLink exact to='/portfolio/contact'>
-                <h3>Contact</h3>
-              </NavLink>
-
-              <NavLink exact to='/'>
+              <a href='#skills'>
+                <h3>Skills</h3>
+              </a>
+              <a href='#'>
                 <h3>Home</h3>
-              </NavLink>
+              </a>
             </div>
           </div>
         </div>

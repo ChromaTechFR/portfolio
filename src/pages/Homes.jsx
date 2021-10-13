@@ -39,7 +39,7 @@ export default function Homes() {
         scrollTrigger: {
           trigger: ".Home",
           start: "0%",
-          end: "200%",
+          end: "800%",
           scrub: 1,
           pin: true,
           pinSpacing: false,
@@ -98,7 +98,7 @@ export default function Homes() {
         scrollTrigger: {
           trigger: ".Home",
           start: "0%",
-          end: "200%",
+          end: "800%",
           scrub: 1,
           pin: true,
           pinSpacing: false,
@@ -157,7 +157,7 @@ export default function Homes() {
         scrollTrigger: {
           trigger: ".Home",
           start: "0%",
-          end: "200%",
+          end: "800%",
           scrub: 1,
           pin: true,
           pinSpacing: false,
@@ -194,22 +194,30 @@ export default function Homes() {
         <h3 className='name'>ChromaTech</h3>
         <div className='square'></div>
       </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum magni
-        veniam quas, tenetur iure totam dolorem velit. Quasi ipsum iusto
-        inventore atque error eum. Minima error corrupti ex enim deserunt. Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsa
-        dolore reprehenderit laboriosam voluptatum vero, illum facere tenetur,
-        quas iure dicta aperiam quam necessitatibus itaque quo quis quod!
-        Excepturi, laudantium. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Natus, est perferendis, sequi qui assumenda, deserunt
-        amet pariatur labore veniam corrupti tempora dolores at recusandae nemo
-        et accusantium placeat totam iste.
-      </p>
-      <img
-        src='https://chromatechfr.github.io/portfolio/img/Screenshot.png'
-        alt=''
-      />
+      <section id='presentation'>
+        <img
+          id='creative'
+          src='https://chromatechfr.github.io/portfolio/img/Screenshot.png'
+          alt=''
+        />
+        <p id='creative'>
+          Ce site a pour but de regrouper toute mes compétences j'espères qu'il
+          vou plaira
+        </p>
+        <img
+          src='https://chromatechfr.github.io/portfolio/img/1.png'
+          alt=''
+          id='curieux'
+        />
+      </section>
+      <section id='skills'>
+        <p>voila mes compétences</p>
+        <img
+          id='skills'
+          src='https://chromatechfr.github.io/portfolio/img/Screenshot.png'
+          alt=''
+        />
+      </section>
     </>
   );
 }
